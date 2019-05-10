@@ -47,6 +47,7 @@
     <Compile Include="src\Cat\Cat.cs" />
     <Compile Include="src\Human\Human.cs" />
     <Compile Include="src\Human\Job.cs" />
+    <Compile Include="src\Human\JobList.cs" />
     <Compile Include="src\Human\Money.cs" />
     <Compile Include="src\Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +61,7 @@
     <Folder Include="src\Toy\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\txts\JobList.txt" />
     <Content Include="src\txts\Persona.txt" />
     <Content Include="src\txts\Setting.txt" />
     <Content Include="src\txts\ToDo.txt" />

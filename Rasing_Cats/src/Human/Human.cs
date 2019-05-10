@@ -2,7 +2,7 @@
 
 namespace Rasing_Cats
 {
-    class Human : BasicInfo
+    class Human : IBasicInfo
     {
         public Human(string name)
         {

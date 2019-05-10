@@ -8,6 +8,7 @@ namespace Rasing_Cats
     {
         static bool isDead = false;
         static DateTime days = new DateTime(2019, 1, 1);
+        static Money money = new Money(100, 0);
 
         static void Main()
         {
@@ -26,7 +27,7 @@ namespace Rasing_Cats
             string select;
             while(!isDead)
             {
-                Console.WriteLine("정보창      자금: {0}", );
+                Console.WriteLine("정보창      자금: {0}", money.Balance);
                 Console.WriteLine("1. 고양이, 2. 당신, 3. 잠자기, 0. 게임 종료");
                 select = Console.ReadLine();
 

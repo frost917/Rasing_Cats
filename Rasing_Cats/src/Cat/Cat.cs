@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rasing_Cats
 {
-    class Cat : BasicInfo
+    class Cat : IBasicInfo
     {
         private int love;
         private int catPersona;

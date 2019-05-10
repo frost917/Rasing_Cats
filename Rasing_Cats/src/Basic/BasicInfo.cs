@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Rasing_Cats
 {
     [Serializable()]
-    class BasicInfo
+    class IBasicInfo
     {
         string name;
         int age;
