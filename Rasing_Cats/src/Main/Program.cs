@@ -27,7 +27,7 @@ namespace Rasing_Cats
             string select;
             while(!isDead)
             {
-                Console.WriteLine("정보창      자금: {0}", money.Balance);
+                Console.WriteLine($"정보창      자금: {money.Balance}");
                 Console.WriteLine("1. 고양이, 2. 당신, 3. 잠자기, 0. 게임 종료");
                 select = Console.ReadLine();
 
@@ -39,6 +39,27 @@ namespace Rasing_Cats
                             Console.WriteLine("1. 정보, 2. 놀아주기, 3. 밥주기, 0. 뒤로가기");
                             select = Console.ReadLine();
 
+                            switch(select)
+                            {
+                                case "1":
+                                    {
+                                        Console.WriteLine("당신의 고양이에 대한 정보에요!");
+                                        Console.WriteLine($"이름: {master.Name}, " +
+                                                            $"나이: {master.Age}, " +
+                                                            $"몸무게: {master.Weight}");
+                                        if(master.Age > 1)
+                                        {
+                                            Console.WriteLine($"고양이의 성격은 " +
+                                                $"{master.GetPersona()}이에요!");
+                                            Console.WriteLine(master.Pers)
+                                        }
+                                        else
+                                            Console.WriteLine("고양이의 나이가 1살이 " +
+                                                "넘기 전까진 볼 수 없어요!");
+
+                                        break;
+                                    }
+                            }
 
                             break;
                         }

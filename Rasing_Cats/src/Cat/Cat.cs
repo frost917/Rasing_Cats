@@ -52,7 +52,6 @@ namespace Rasing_Cats
         }
 
         public int Love { get => love; set => love = value; }
-        public int CatPersona { get => catPersona; }
 
         public Cat(string name)
         {
@@ -66,6 +65,19 @@ namespace Rasing_Cats
         public void Move()
         {
             Random moving = new Random();
+        }
+
+        public string GetPersona()
+        {
+            Persona persona = (Persona)catPersona;
+            return persona.ToString();
+        }
+
+        public string GetPersonaInfo()
+        {
+            Persona persona = (Persona)catPersona;
+            PersonaScript.TryGetValue(persona, out string value);
+            return value;
         }
     }
 }
