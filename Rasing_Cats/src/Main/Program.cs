@@ -51,7 +51,7 @@ namespace Rasing_Cats
                                         {
                                             Console.WriteLine($"고양이의 성격은 " +
                                                 $"{master.GetPersona()}이에요!");
-                                            Console.WriteLine(master.Pers)
+                                            Console.WriteLine(master.GetPersonaInfo());
                                         }
                                         else
                                             Console.WriteLine("고양이의 나이가 1살이 " +
